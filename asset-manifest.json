@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NotitasApp/static/css/main.accfa839.css",
+    "main.js": "/NotitasApp/static/js/main.90119f8c.js",
+    "static/js/787.5fe07a4f.chunk.js": "/NotitasApp/static/js/787.5fe07a4f.chunk.js",
+    "index.html": "/NotitasApp/index.html",
+    "main.accfa839.css.map": "/NotitasApp/static/css/main.accfa839.css.map",
+    "main.90119f8c.js.map": "/NotitasApp/static/js/main.90119f8c.js.map",
+    "787.5fe07a4f.chunk.js.map": "/NotitasApp/static/js/787.5fe07a4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.accfa839.css",
+    "static/js/main.90119f8c.js"
+  ]
+}

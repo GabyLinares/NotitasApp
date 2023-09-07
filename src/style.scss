@@ -1,0 +1,97 @@
+.formContainer {
+    // background-image: url('assets/stickynote.svg');
+    background-color: #E7C6FF;
+    color: black;
+    font-family: 'Baby Doll';
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Make it a fixed position to cover the screen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the full width of the screen */
+    height: 100%;
+    align-items: center;
+    // justify-content: center;
+
+    .tituloNotitas {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: 'Winkle';
+        border: 1px solid#000;
+        width: 236px;
+        height: 73px;
+        box-shadow: 0px 7.02261px 7.02261px 0px rgba(0, 0, 0, 0.25);
+        background-color: white;
+        font-size: 64px;
+        border-radius: 30px;
+        margin-top: 50px;
+    }
+
+
+    .formWrapper {
+
+        background-color: #FBE79E;
+        box-shadow: 0px 7.02261px 7.02261px 0px rgba(0, 0, 0, 0.25);
+        width: 280.904px;
+        height: 280.904px;
+        padding: 15px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 50px auto auto auto;
+        // overflow: autos;
+
+        .titleWrapper {
+            font-size: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            // border: 1px solid black;
+
+            input {
+                width: 90%;
+                // height: 33px;
+                border-radius: 30px;
+                border: 1px solid #000;
+                background-color: #E7C6FF;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                font-family: 'Baby Doll';
+                padding: 15px;
+
+                // ::placeholder {
+                //     margin-left: 20px;
+                // }
+            }
+
+            button {
+                border-radius: 30px;
+                border: 1px solid #000;
+                background-color: #E7C6FF;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                font-family: 'Baby Doll';
+                width: 130px;
+                height: 38px;
+            }
+
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+    }
+}
+
+.formContainer .formWrapper button:hover {
+    background-color: #ce8dfc; /* Change the background color on hover */
+    transform: scale(1.1); /* Scale the button on hover (optional) */
+}

@@ -21,9 +21,22 @@ export const Home = () => {
     },
   ]);
 
+  const addNote = (text) => {
+    const date = new Date();
+    const newNote = {
+      id: nanoid(),
+      text: text,
+      date:  date.toLocaleDateString(),
+      }
+
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes);
+
+  }
+
   return (
     <div className='menu-notas'>
-      <NotesList notes={notes}/>
+      <NotesList notes={notes} handleAddNote={addNote}/>
     </div>
   )
 }

@@ -19,6 +19,8 @@ export const Home = () => {
     },
   ]);
 
+  const [searchText, setSearchText] = useState('');
+
   const addNote = (title, text) => {
     const date = new Date();
     const newNote = {
@@ -34,19 +36,22 @@ export const Home = () => {
   };
 
   const deleteNote = (id) => {
-    console.log(`Deleting note with ID: ${id}`);
     const newNotes = notes.filter((note) => note.id !== id);
     setNotes(newNotes);
   };
+
+  // const searchNotes = (text) => {
+  //   const newNotes = notes.find((text) => text)
+  // }
 
   return (
     <div className='menu-notas'>
       <div className='tituloNotitas'>
         <span className='notitas'>Notitas</span>
-        <Search />
+        <Search handleSearchNote={setSearchText}/>
       </div>
       <NotesList
-        notes={notes}
+        notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))}
         handleAddNote={addNote}
         handleDeleteNote={deleteNote} />
       {/* <div className='footerNotitas'> */}

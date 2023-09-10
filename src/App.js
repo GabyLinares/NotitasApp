@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Register } from './pages/Register';
@@ -14,7 +13,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path='/inicio' element={<Home />} />
-        <Route path='/NotitasApp' element={<Register />} />
+        <Route path='/NotitasApp' element={<Login />} />
         <Route path='/registro' element={<Register />} />
         <Route path='/login' element={<Login />} />
       </Routes>

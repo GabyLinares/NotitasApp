@@ -14,7 +14,7 @@ export const Register = () => {
                     <input type='password' placeholder='confirmar contraseña' required></input>
                     <button>Registrarse</button>
                 </form>
-                <p>Ya tienes cuenta? Ingresa</p>
+                <p>Ya tienes cuenta? <a href='/login'>Ingresa</a></p>
             </div>
         </div>
     )

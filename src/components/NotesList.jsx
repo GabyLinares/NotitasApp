@@ -1,15 +1,19 @@
 import React from 'react';
 import { Nota } from './Nota.jsx';
-import { Home } from '../pages/Home.jsx';
 import { AddNote } from './AddNote.jsx';
 
-export const NotesList = ({ notes, handleAddNote }) => {
+export const NotesList = ({ notes, handleAddNote, handleDeleteNote }) => {
     return (
         <div className="notesList">
             {notes.map((note) => (
-                <Nota key={note.id} text={note.text} date={note.date}/>
+                <Nota
+                    id={note.id}
+                    title={note.title}
+                    text={note.text}
+                    date={note.date}
+                    handleDeleteNote={handleDeleteNote} />
             ))}
-            <AddNote handleAddNote={handleAddNote}/>
+            <AddNote handleAddNote={handleAddNote} />
         </div>
     )
 }

@@ -1,17 +1,24 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Register } from './pages/Register';
 import { Login } from './pages/Login';
-import { NotesList } from './components/NotesList';
-import { AddNote} from './components/AddNote';
 import "./style.scss"
-import React, { useState } from 'react'
+import React from 'react'
 
 
 function App() {
 
   return (
-    <Home/>
+    <Router>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path='/inicio' element={<Home />} />
+        <Route path='/NotitasApp' element={<Register />} />
+        <Route path='/registro' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 

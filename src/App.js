@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path='/inicio' element={<Home />} />
-        <Route path='/NotitasApp' element={<Home />} />
+        <Route path='/NotitasApp' element={<Login />} />
         <Route path='/registro' element={<Register />} />
         <Route path='/login' element={<Login />} />
       </Routes>
